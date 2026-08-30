@@ -1,0 +1,256 @@
+/* form-localizacao.css — Formulário de orçamento + Localização (Google Maps)
+   Mantém a identidade visual do site: preto/cinza escuro/dourado. */
+
+/* ---------- Formulário de orçamento ---------- */
+.budget__form {
+  max-width: 820px;
+  margin-inline: auto;
+  background: var(--dark);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius);
+  padding: 2.4rem 2.2rem;
+}
+
+.budget__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem 1.6rem;
+}
+
+.budget__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.budget__field--full {
+  grid-column: 1 / -1;
+}
+
+.budget__label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.budget__label::after {
+  content: " *";
+  color: var(--gold);
+}
+
+.budget__field--optional .budget__label::after {
+  content: " (opcional)";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.budget__input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: var(--black);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color-scheme: dark;
+  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+
+.budget__input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.budget__input:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.22);
+}
+
+.budget__input.is-valid {
+  border-color: rgba(201, 168, 76, 0.55);
+}
+
+.budget__input.is-invalid {
+  border-color: #e05b5b;
+  box-shadow: 0 0 0 3px rgba(224, 91, 91, 0.18);
+}
+
+textarea.budget__input {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.budget__error {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: #ff9b9b;
+  margin-top: 0.15rem;
+}
+
+.budget__error::before {
+  content: "⚠";
+  flex-shrink: 0;
+}
+
+.budget__actions {
+  margin-top: 1.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.budget__submit-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.budget__spinner {
+  animation: spin 0.9s linear infinite;
+}
+
+.budget__spinner[hidden] {
+  display: none;
+}
+
+button[disabled] .budget__spinner {
+  display: inline;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.budget__status {
+  max-width: 820px;
+  margin: 1.2rem auto 0;
+  padding: 0.9rem 1.2rem;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.budget__status--success {
+  background: rgba(201, 168, 76, 0.12);
+  border: 1px solid rgba(201, 168, 76, 0.4);
+  color: var(--gold);
+}
+
+.budget__status--error {
+  background: rgba(224, 91, 91, 0.1);
+  border: 1px solid rgba(224, 91, 91, 0.4);
+  color: #ffb4b4;
+}
+
+/* ---------- Localização (Google Maps) ---------- */
+.location {
+  background: #141414;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.location__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.8rem;
+  align-items: stretch;
+}
+
+.location__map {
+  position: relative;
+  min-height: 420px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  background: var(--dark);
+}
+
+.location__map-error {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.location__map-error[hidden] {
+  display: none;
+}
+
+.location__map-error-title {
+  font-family: var(--font-title);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.location__map-error-text {
+  color: var(--gray);
+  font-size: 0.95rem;
+  max-width: 360px;
+}
+
+.location__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  background: var(--dark);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius);
+  padding: 2.2rem 1.8rem;
+}
+
+.location__info h3 {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.location__address {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.location__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+.location__actions .btn {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .location__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .location__map {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 640px) {
+  .budget__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .budget__form {
+    padding: 1.6rem 1.2rem;
+  }
+}

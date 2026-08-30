@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <pattern id="pole" width="140" height="140" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="140" height="140" fill="#1a1a1a"/>
+      <rect width="140" height="46" fill="#2d2d2d"/>
+      <rect width="140" height="20" x="0" y="60" fill="#c9a84c" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#pole)"/>
+</svg>

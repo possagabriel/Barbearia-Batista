@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="600" viewBox="0 0 480 600">
+  <rect width="480" height="600" fill="#2d2d2d"/>
+  <circle cx="240" cy="205" r="95" fill="#1a1a1a"/>
+  <path d="M145 480 Q240 380 335 480 L335 600 L145 600 Z" fill="#1a1a1a"/>
+  <path d="M150 160 h60" stroke="#c9a84c" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M150 190 h45" stroke="#c9a84c" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M160 250 h80" stroke="#c9a84c" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M330 160 h-60" stroke="#c9a84c" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M330 190 h-45" stroke="#c9a84c" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M320 250 h-80" stroke="#c9a84c" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <text x="240" y="562" font-family="Georgia,serif" font-size="22" fill="#c9a84c" text-anchor="middle" letter-spacing="5">DEGRADÊ</text>
+</svg>
