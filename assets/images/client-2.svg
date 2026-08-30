@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+  <circle cx="48" cy="48" r="46" fill="#1a1a1a" stroke="#c9a84c" stroke-width="3"/>
+  <circle cx="48" cy="38" r="16" fill="none" stroke="#c9a84c" stroke-width="3"/>
+  <path d="M20 82 q28 -22 56 0" fill="none" stroke="#c9a84c" stroke-width="3"/>
+  <text x="48" y="94" font-family="Georgia,serif" font-size="15" fill="#c9a84c" text-anchor="middle" letter-spacing="2">CE</text>
+</svg>

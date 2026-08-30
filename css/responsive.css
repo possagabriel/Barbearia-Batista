@@ -1,0 +1,116 @@
+/* responsive.css — Mobile-first, breakpoints em 768px e 1024px */
+
+/* ---------- Tablet / médios (até 1024px) ---------- */
+@media (max-width: 1024px) {
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about__media img {
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- Mobile (até 768px) ---------- */
+@media (max-width: 768px) {
+  .header__cta {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .nav {
+    position: fixed;
+    inset: 84px 0 auto 0;
+    padding: 1.5rem 1.5rem 2rem;
+    background: rgba(26, 26, 26, 0.97);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.25);
+    transform: translateY(-130%);
+    opacity: 0;
+    transition: transform 0.35s var(--ease), opacity 0.35s var(--ease);
+  }
+
+  .nav.open {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1rem;
+  }
+
+  .nav__link {
+    font-size: 1.05rem;
+  }
+
+  .section {
+    padding: 4.5rem 0;
+  }
+
+  .hero {
+    padding: 7rem 0 4.5rem;
+  }
+
+  .grid--2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--3 {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    padding: 5rem 0;
+  }
+
+  .stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* ---------- Mobile pequeno (até 480px) ---------- */
+@media (max-width: 480px) {
+  .hero__actions {
+    flex-direction: column;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+  }
+}
