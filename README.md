@@ -1,4 +1,4 @@
-# 🪒 Barbearia Batista — Landing Page
+# Barbearia Batista — Landing Page
 
 Site institucional (single page) da **Barbearia Batista** — cortes adulto e infantil,
 barba e serviços especializados, com foco em conversão via WhatsApp.
@@ -15,7 +15,7 @@ barbearia-batista/
 │   ├── responsive.css    → Mobile-first (768px e 1024px)
 │   └── form-localizacao.css → Orçamento + Localização (Google Maps)
 ├── js/
-│   ├── data.js           → ⚙️ TODOS OS DADOS EDITÁVEIS DO SITE
+│   ├── data.js           → TODOS OS DADOS EDITÁVEIS DO SITE
 │   ├── whatsapp.js       → Configura os links do WhatsApp
 │   ├── main.js           → Renderiza seções e ativa efeitos
 │   ├── form.js           → Formulário de orçamento (validação e acessibilidade)
