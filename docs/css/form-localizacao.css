@@ -1,0 +1,122 @@
+dialog {
+  color:var(--ivory);
+  background:var(--ink);
+  border:1px solid var(--line);
+  padding:48px;
+  margin:auto;
+  width:min(720px,calc(100% - 32px));
+  max-height:calc(100svh - 40px);
+  overflow:auto;
+  overscroll-behavior:contain}
+  dialog::backdrop {
+    background:rgba(5,9,6,.84);
+    backdrop-filter:blur(7px)}
+    dialog h2 {
+      font-size:3.1rem;
+      margin:15px 0}
+      dialog .eyebrow {
+        padding-right:28px}
+        .dialog-close {
+          position:absolute;
+          top:14px;
+          right:14px;
+          width:44px;
+          height:44px;
+          border:0;
+          background:transparent;
+          color:var(--champagne);
+          font:300 2rem/1 var(--font-body)}
+          .dialog-close:hover {
+            background:var(--forest)}
+            .dialog-intro {
+              font-size:.9375rem;
+              color:var(--muted);
+              margin-bottom:27px}
+              .budget__grid {
+                display:grid;
+                grid-template-columns:1fr 1fr;
+                gap:18px 22px}
+                .budget__field {
+                  min-width:0}
+                  .budget__field--full {
+                    grid-column:1/-1}
+                    .budget__field label {
+                      font-size:.875rem;
+                      display:block;
+                      margin-bottom:7px}
+                      .budget__field label span {
+                        color:var(--muted);
+                        font-size:.75rem}
+                        .budget__field input,.budget__field select,.budget__field textarea {
+                          background:var(--surface);
+                          color:var(--ivory);
+                          border:1px solid var(--line);
+                          border-radius:0;
+                          width:100%;
+                          min-height:48px;
+                          padding:10px 12px;
+                          font-size:1rem;
+                          line-height:1.5}
+                          .budget__field input::placeholder,.budget__field textarea::placeholder {
+                            color:#a7a99e}
+                            .budget__field textarea {
+                              resize:vertical;
+                              min-height:80px}
+                              .budget__field [aria-invalid=true] {
+                                border-color:#d9a394}
+                                .budget__error {
+                                  color:#e4afa0;
+                                  font-size:.875rem;
+                                  margin-top:8px;
+                                  line-height:1.5}
+                                  .budget__submit {
+                                    width:100%;
+                                    margin-top:28px}
+                                    .budget__status {
+                                      color:var(--champagne);
+                                      font-size:.875rem;
+                                      border-top:1px solid var(--line);
+                                      margin-top:20px;
+                                      padding-top:16px}
+                                      .budget__status a {
+                                        display:block;
+                                        text-decoration:underline;
+                                        text-underline-offset:4px;
+                                        margin-top:8px}
+                                        .lightbox {
+                                          width:min(1080px,calc(100% - 32px));
+                                          padding:60px 40px 24px;
+                                          text-align:center;
+                                          background:#0a0d0b}
+                                          .lightbox img {
+                                            margin:auto;
+                                            width:100%;
+                                            height:min(65svh,750px);
+                                            object-fit:contain}
+                                            .lightbox figcaption {
+                                              font-size:.875rem;
+                                              color:var(--champagne);
+                                              margin-top:19px}
+                                              .lightbox__controls {
+                                                display:flex;
+                                                align-items:center;
+                                                justify-content:center;
+                                                gap:26px;
+                                                margin-top:16px;
+                                                color:var(--muted);
+                                                font-size:.8125rem}
+                                                .lightbox__controls button {
+                                                  width:48px;
+                                                  height:44px;
+                                                  background:transparent;
+                                                  border:1px solid var(--line);
+                                                  font-size:1.3rem}
+                                                  .lightbox__controls button:hover {
+                                                    border-color:var(--gold)}
+                                                    .location__map {
+                                                      height:320px;
+                                                      width:100%;
+                                                      margin:22px 0}
+                                                      .location-dialog>p:not(.eyebrow) {
+                                                        color:var(--muted);
+                                                        margin-bottom:24px}

@@ -1,0 +1,325 @@
+@media(min-width:1600px) {
+  .hero__inner {
+    padding-top:210px}
+    .hero__copy {
+      padding-top:55px}
+    }
+    @media(max-width:1150px) {
+      .container {
+        width:calc(100% - 80px)}
+        .header__inner {
+          gap:24px}
+          .nav {
+            gap:22px}
+            .header__cta {
+              gap:16px}
+              .about__grid {
+                gap:60px}
+                .about__media img {
+                  height:520px}
+                  .services__layout {
+                    gap:60px}
+                    .footer__grid {
+                      gap:30px;
+                      grid-template-columns:1fr 1fr}
+                      .services__annotation {
+                        max-width:250px}
+                        .service {
+                          gap:16px}
+                          .gallery__grid {
+                            gap:20px}
+                            .gallery__button img {
+                              height:330px}
+                              .gallery__item:nth-child(2) img {
+                                height:300px}
+                                .gallery__item:nth-child(3) img {
+                                  height:270px}
+                                }
+                                @media(max-width:850px) {
+                                  .container {
+                                    width:calc(100% - 48px)}
+                                    .section {
+                                      padding-block:88px}
+                                      .header__inner {
+                                        min-height:95px;
+                                        flex-wrap:wrap;
+                                        gap:0;
+                                        padding-block:20px}
+                                        .brand__name {
+                                          font-size:2.2rem}
+                                          .header__cta {
+                                            margin-left:auto;
+                                            margin-right:20px}
+                                            .nav-toggle:not([hidden]) {
+                                              display:flex;
+                                              order:3}
+                                              .nav {
+                                                order:4;
+                                                width:100%;
+                                                justify-content:center;
+                                                gap:30px;
+                                                padding-top:20px}
+                                                .menu-ready .nav {
+                                                  display:none}
+                                                  .menu-ready .nav.open {
+                                                    display:flex;
+                                                    padding-bottom:8px}
+                                                    .header:has(.nav.open) {
+                                                      background:var(--ink);
+                                                      border-color:var(--gold)}
+                                                      .hero__inner {
+                                                        min-height:780px;
+                                                        padding-top:175px}
+                                                        .hero__copy {
+                                                          padding-block:60px}
+                                                          .hero h1 {
+                                                            font-size:clamp(4.4rem,10vw,6rem)}
+                                                            .hero__shade {
+                                                              background:linear-gradient(90deg,rgba(9,13,10,.88),rgba(9,13,10,.58) 55%,rgba(9,13,10,.16)),linear-gradient(0deg,rgba(9,13,10,.85),transparent 50%)}
+                                                              .hero__image {
+                                                                object-position:62% center}
+                                                                .about__grid {
+                                                                  gap:44px;
+                                                                  grid-template-columns:1fr 1fr}
+                                                                  .about__media {
+                                                                    padding-right:12px}
+                                                                    .about__media img {
+                                                                      height:530px}
+                                                                      .about__media figcaption {
+                                                                        align-items:start;
+                                                                        flex-direction:column;
+                                                                        gap:5px}
+                                                                        .about__content h2 {
+                                                                          font-size:3rem}
+                                                                          .services__layout {
+                                                                            grid-template-columns:1fr;
+                                                                            gap:42px}
+                                                                            .services__intro {
+                                                                              max-width:650px}
+                                                                              .services__intro h2 br {
+                                                                                display:none}
+                                                                                .services__intro h2 {
+                                                                                  max-width:620px}
+                                                                                  .services__annotation {
+                                                                                    display:none}
+                                                                                    .service p {
+                                                                                      max-width:450px}
+                                                                                      .gallery__grid {
+                                                                                        grid-template-columns:1.25fr 1fr;
+                                                                                        gap:25px}
+                                                                                        .gallery__item:nth-child(3) {
+                                                                                          grid-column:1/-1;
+                                                                                          padding-top:8px;
+                                                                                          width:60%;
+                                                                                          margin-left:auto}
+                                                                                          .gallery__item:nth-child(3) img {
+                                                                                            height:300px}
+                                                                                            .gallery__heading {
+                                                                                              gap:25px}
+                                                                                              .gallery__heading>p {
+                                                                                                max-width:210px}
+                                                                                                .footer {
+                                                                                                  padding-top:65px}
+                                                                                                }
+                                                                                                @media(max-width:600px) {
+                                                                                                  .header__cta {
+                                                                                                    display:none}
+                                                                                                    .nav-toggle {
+                                                                                                      margin-left:auto}
+                                                                                                      .container {
+                                                                                                        width:calc(100% - 40px)}
+                                                                                                        .section {
+                                                                                                          padding-block:72px}
+                                                                                                          h2 {
+                                                                                                            font-size:3rem}
+                                                                                                            .header__inner {
+                                                                                                              min-height:86px;
+                                                                                                              gap:0;
+                                                                                                              padding-block:18px}
+                                                                                                              .brand__name {
+                                                                                                                font-size:2rem}
+                                                                                                                .brand__eyebrow {
+                                                                                                                  font-size:.75rem}
+                                                                                                                  .header__cta {
+                                                                                                                    padding:8px 11px;
+                                                                                                                    min-height:44px;
+                                                                                                                    gap:9px;
+                                                                                                                    margin-right:12px;
+                                                                                                                    font-size:.75rem}
+                                                                                                                    .header__cta>span {
+                                                                                                                      display:none}
+                                                                                                                      .nav {
+                                                                                                                        justify-content:space-between;
+                                                                                                                        gap:12px}
+                                                                                                                        .nav__link {
+                                                                                                                          font-size:.875rem}
+                                                                                                                          .hero {
+                                                                                                                            min-height:740px}
+                                                                                                                            .hero__inner {
+                                                                                                                              min-height:740px;
+                                                                                                                              padding-top:150px}
+                                                                                                                              .hero__copy {
+                                                                                                                                padding-block:55px 75px}
+                                                                                                                                .hero h1 {
+                                                                                                                                  font-size:clamp(3.9rem,13vw,5rem);
+                                                                                                                                  margin:28px 0}
+                                                                                                                                  .hero__eyebrow {
+                                                                                                                                    font-size:.75rem;
+                                                                                                                                    letter-spacing:.14em;
+                                                                                                                                    gap:12px}
+                                                                                                                                    .hero__eyebrow>span {
+                                                                                                                                      width:22px}
+                                                                                                                                      .hero__image {
+                                                                                                                                        object-position:60% center}
+                                                                                                                                        .hero__shade {
+                                                                                                                                          background:linear-gradient(90deg,rgba(9,13,10,.81),rgba(9,13,10,.46)),linear-gradient(0deg,rgba(9,13,10,.86),transparent 70%)}
+                                                                                                                                          .hero__bottom {
+                                                                                                                                            min-height:85px}
+                                                                                                                                            .hero__bottom>span {
+                                                                                                                                              max-width:155px;
+                                                                                                                                              font-size:.75rem;
+                                                                                                                                              line-height:1.9;
+                                                                                                                                              letter-spacing:.12em}
+                                                                                                                                              .hero__bottom>a {
+                                                                                                                                                gap:17px;
+                                                                                                                                                font-size:.75rem}
+                                                                                                                                                .hero__description {
+                                                                                                                                                  font-size:1rem}
+                                                                                                                                                  .about__grid {
+                                                                                                                                                    grid-template-columns:1fr;
+                                                                                                                                                    gap:54px}
+                                                                                                                                                    .about__media {
+                                                                                                                                                      width:90%;
+                                                                                                                                                      padding-right:14px}
+                                                                                                                                                      .about__media img {
+                                                                                                                                                        height:430px}
+                                                                                                                                                        .about__media figcaption {
+                                                                                                                                                          flex-direction:row;
+                                                                                                                                                          align-items:center;
+                                                                                                                                                          font-size:.75rem;
+                                                                                                                                                          gap:10px}
+                                                                                                                                                          .about__media figcaption span:first-child {
+                                                                                                                                                            font-size:.75rem}
+                                                                                                                                                            .about__media:before {
+                                                                                                                                                              bottom:55px}
+                                                                                                                                                              .about__content h2 {
+                                                                                                                                                                font-size:3.25rem}
+                                                                                                                                                                .signature {
+                                                                                                                                                                  margin-top:28px}
+                                                                                                                                                                  .services__intro h2 {
+                                                                                                                                                                    font-size:3.25rem}
+                                                                                                                                                                    .service {
+                                                                                                                                                                      grid-template-columns:18px 1fr auto;
+                                                                                                                                                                      gap:12px;
+                                                                                                                                                                      padding-block:27px}
+                                                                                                                                                                      .service h3 {
+                                                                                                                                                                        font-size:1.75rem}
+                                                                                                                                                                        .service p {
+                                                                                                                                                                          font-size:.875rem}
+                                                                                                                                                                          .service__price {
+                                                                                                                                                                            font-size:1.45rem}
+                                                                                                                                                                            .service__reserve {
+                                                                                                                                                                              font-size:.75rem;
+                                                                                                                                                                              gap:5px}
+                                                                                                                                                                              .services__layout {
+                                                                                                                                                                                gap:28px}
+                                                                                                                                                                                .gallery__heading {
+                                                                                                                                                                                  display:block;
+                                                                                                                                                                                  margin-bottom:36px}
+                                                                                                                                                                                  .gallery__heading>p {
+                                                                                                                                                                                    max-width:none;
+                                                                                                                                                                                    margin-top:24px}
+                                                                                                                                                                                    .gallery__grid {
+                                                                                                                                                                                      gap:27px 18px}
+                                                                                                                                                                                      .gallery__item:first-child {
+                                                                                                                                                                                        grid-column:1/-1}
+                                                                                                                                                                                        .gallery__button img {
+                                                                                                                                                                                          height:330px}
+                                                                                                                                                                                          .gallery__item:nth-child(2) {
+                                                                                                                                                                                            padding-top:0}
+                                                                                                                                                                                            .gallery__item:nth-child(3) {
+                                                                                                                                                                                              grid-column:auto;
+                                                                                                                                                                                              width:auto;
+                                                                                                                                                                                              margin:0;
+                                                                                                                                                                                              padding-top:45px}
+                                                                                                                                                                                              .gallery__item:nth-child(2) img {
+                                                                                                                                                                                                height:260px}
+                                                                                                                                                                                                .gallery__item:nth-child(3) img {
+                                                                                                                                                                                                  height:215px}
+                                                                                                                                                                                                  .gallery__item figcaption {
+                                                                                                                                                                                                    display:block;
+                                                                                                                                                                                                    font-size:.8125rem;
+                                                                                                                                                                                                    line-height:1.6}
+                                                                                                                                                                                                    .gallery__item figcaption span:first-child {
+                                                                                                                                                                                                      display:block;
+                                                                                                                                                                                                      font-size:.75rem;
+                                                                                                                                                                                                      margin-bottom:6px}
+                                                                                                                                                                                                      .gallery__note {
+                                                                                                                                                                                                        font-size:.75rem}
+                                                                                                                                                                                                        .reservation h2 {
+                                                                                                                                                                                                          font-size:3.4rem}
+                                                                                                                                                                                                          .reservation__inner>p:not(.eyebrow) {
+                                                                                                                                                                                                            max-width:290px;
+                                                                                                                                                                                                            margin-inline:auto}
+                                                                                                                                                                                                            .footer__grid {
+                                                                                                                                                                                                              grid-template-columns:1fr 1fr;
+                                                                                                                                                                                                              gap:42px 28px;
+                                                                                                                                                                                                              padding-bottom:45px}
+                                                                                                                                                                                                              .footer__brand {
+                                                                                                                                                                                                                grid-column:1/-1}
+                                                                                                                                                                                                                .footer__col {
+                                                                                                                                                                                                                  font-size:.875rem}
+                                                                                                                                                                                                                  .footer__col:nth-child(3) {
+                                                                                                                                                                                                                    grid-column:1/-1;
+                                                                                                                                                                                                                    grid-row:3;
+                                                                                                                                                                                                                    max-width:310px}
+                                                                                                                                                                                                                    .footer__title {
+                                                                                                                                                                                                                      font-size:.75rem}
+                                                                                                                                                                                                                      .footer__bottom {
+                                                                                                                                                                                                                        font-size:.75rem;
+                                                                                                                                                                                                                        flex-direction:column;
+                                                                                                                                                                                                                        gap:8px}
+                                                                                                                                                                                                                        dialog {
+                                                                                                                                                                                                                          padding:48px 22px 28px;
+                                                                                                                                                                                                                          max-height:calc(100svh - 24px)}
+                                                                                                                                                                                                                          dialog h2 {
+                                                                                                                                                                                                                            font-size:2.65rem}
+                                                                                                                                                                                                                            .budget__grid {
+                                                                                                                                                                                                                              grid-template-columns:1fr}
+                                                                                                                                                                                                                              .budget__field--full {
+                                                                                                                                                                                                                                grid-column:auto}
+                                                                                                                                                                                                                                .lightbox {
+                                                                                                                                                                                                                                  padding:58px 12px 22px}
+                                                                                                                                                                                                                                  .lightbox img {
+                                                                                                                                                                                                                                    height:60svh}
+                                                                                                                                                                                                                                    .lightbox figcaption {
+                                                                                                                                                                                                                                      font-size:.8125rem}
+                                                                                                                                                                                                                                      .dialog-intro {
+                                                                                                                                                                                                                                        font-size:1rem}
+                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                      @media(max-width:360px) {
+                                                                                                                                                                                                                                        .container {
+                                                                                                                                                                                                                                          width:calc(100% - 32px)}
+                                                                                                                                                                                                                                          .header__cta {
+                                                                                                                                                                                                                                            font-size:.75rem;
+                                                                                                                                                                                                                                            gap:5px;
+                                                                                                                                                                                                                                            margin-right:8px}
+                                                                                                                                                                                                                                            .brand__name {
+                                                                                                                                                                                                                                              font-size:1.8rem}
+                                                                                                                                                                                                                                              .hero h1 {
+                                                                                                                                                                                                                                                font-size:3.65rem}
+                                                                                                                                                                                                                                                .hero__eyebrow {
+                                                                                                                                                                                                                                                  font-size:.75rem}
+                                                                                                                                                                                                                                                  .hero .button {
+                                                                                                                                                                                                                                                    padding-inline:20px}
+                                                                                                                                                                                                                                                    .service {
+                                                                                                                                                                                                                                                      grid-template-columns:1fr auto}
+                                                                                                                                                                                                                                                      .service__number {
+                                                                                                                                                                                                                                                        display:none}
+                                                                                                                                                                                                                                                        .footer__grid {
+                                                                                                                                                                                                                                                          gap:32px 20px}
+                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                        @media(prefers-reduced-motion:reduce) {
+                                                                                                                                                                                                                                                          html {
+                                                                                                                                                                                                                                                            scroll-behavior:auto}
+                                                                                                                                                                                                                                                          }
