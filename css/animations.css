@@ -1,0 +1,41 @@
+/* animations.css — Animações de entrada e efeitos gerais (Intersection Observer) */
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Elementos .reveal começam visíveis e só são ocultados quando o JS está ativo
+   (html.js). Assim, se o JS falhar por qualquer motivo, o conteúdo continua visível. */
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.js .reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  will-change: opacity, transform;
+}
+
+.js .reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Atraso em cascata para grids */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .js .reveal,
+  .whatsapp-float,
+  .to-top {
+    transition: none;
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

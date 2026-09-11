@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Barbearia Batista — Corte e estilo para toda a família. Cortes adulto e infantil, barba e primeira linha no atendimento. Agende pelo WhatsApp.">
+  <meta name="theme-color" content="#1a1a1a">
+  <meta name="author" content="Barbearia Batista">
+
+  <!-- Open Graph / redes sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Barbearia Batista | Corte e Estilo para Toda a Família">
+  <meta property="og:description" content="Cortes adulto e infantil, barba e atendimento acolhedor. Do seu visual ao do seu filho, com preço justo. Agende pelo WhatsApp.">
+  <meta property="og:image" content="assets/images/logoprincipal.png">
+  <meta property="og:site_name" content="Barbearia Batista">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Barbearia Batista | Corte e Estilo para Toda a Família">
+  <meta name="twitter:description" content="Cortes adulto e infantil, barba e atendimento acolhedor. Agende pelo WhatsApp.">
+
+  <title>Barbearia Batista | Corte e Estilo para Toda a Família</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/logoprincipal.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logoprincipal.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logoprincipal.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/form-localizacao.css">
+
+  <!-- Marca que o JS está ativo (só então os efeitos de fade-in são aplicados) -->
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="topo">
+    <div class="container header__inner">
+      <a href="#topo" class="brand" aria-label="Barbearia Batista — home">
+        <img class="brand__logo brand--logo" src="assets/images/logo-escrito.png" alt="Barbearia Batista" width="220" height="60">
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="navMenu" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Início</a></li>
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#galeria" class="nav__link">Galeria</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--gold header__cta" target="_blank" rel="noopener" data-whatsapp
+         href="#"><!-- WhatsApp preenchido via js/whatsapp.js -->Agendar</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__overlay"></div>
+      <div class="container hero__inner">
+        <p class="hero__kicker">Barbearia Batista · Desde sempre</p>
+        <h1 class="hero__title">Corte e estilo<br>para <em>toda a família</em></h1>
+        <p class="hero__subtitle">
+          Cortes adultos e infantis, barba na navalha e atendimento acolhedor.
+          Do seu visual ao do seu filho: tudo em um só lugar, com preço justo.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--gold" target="_blank" rel="noopener" data-whatsapp href="#">
+            Agendar via WhatsApp
+          </a>
+          <a class="btn btn--ghost" href="#servicos">Ver serviços</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NÚMEROS ============ -->
+  <section class="stats" id="numeros" aria-labelledby="numeros-title">
+    <div class="container">
+      <h2 class="sr-only" id="numeros-title">Números da Barbearia Batista</h2>
+      <div class="stats__grid" id="statsGrid">
+        <!-- Renderizado via js/main.js a partir de data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVIÇOS ============ -->
+    <section class="section services" id="servicos" aria-labelledby="servicos-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Nossos serviços</p>
+          <h2 class="section__title" id="servicos-title">Feito sob medida para você</h2>
+          <p class="section__lead">Escolha o serviço, agende pelo WhatsApp e vem tirar essa casca.</p>
+        </header>
+
+        <div class="cards cards--services" id="servicesGrid">
+          <!-- Renderizado via js/main.js a partir de data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DIFERENCIAIS ============ -->
+    <section class="section features" id="diferenciais" aria-labelledby="diferenciais-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Por que a gente</p>
+          <h2 class="section__title" id="diferenciais-title">O que nos torna diferentes</h2>
+        </header>
+
+        <div class="grid grid--3" id="featuresGrid">
+          <!-- Renderizado via js/main.js a partir de data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="section about" id="sobre" aria-labelledby="sobre-title">
+      <div class="container about__grid">
+        <figure class="about__media reveal">
+          <img src="assets/images/about.svg" alt="Espaço interno da Barbearia Batista"
+               loading="lazy" width="560" height="560">
+        </figure>
+        <article class="about__content reveal">
+          <p class="section__kicker">Nossa história</p>
+          <h2 class="section__title" id="sobre-title">Uma barbearia de família, para famílias</h2>
+          <p>
+            A Barbearia Batista nasceu do sonho do <strong>Gusttavo Carvalho</strong>:
+            criar um lugar onde o corte é capricho, o papo é gostoso e todo mundo é recebido
+            como gente da casa — das crianças que chegam correndo aos pais que vêm relaxar.
+          </p>
+          <p>
+            Aqui a navalha é levada a sério, mas o sorriso também. Tradição no ofício,
+            modernidade no estilo e sempre um café fresco esperando por você.
+          </p>
+          <ul class="about__list">
+            <li>Ambiente climatizado e acolhedor</li>
+            <li>Atendimento de pai e filho no mesmo horário</li>
+            <li>Material descartável e toalha quente em todo atendimento</li>
+            <li>Horário flexível, com agendamento via WhatsApp</li>
+          </ul>
+          <a class="btn btn--dark" target="_blank" rel="noopener" data-whatsapp href="#">
+            Marcar meu horário
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ GALERIA ============ -->
+    <section class="section gallery" id="galeria" aria-labelledby="galeria-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Nosso trabalho</p>
+          <h2 class="section__title" id="galeria-title">O resultado fala por si</h2>
+        </header>
+
+        <div class="gallery__grid" id="galleryGrid">
+          <!-- Renderizado via js/main.js a partir de data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DEPOIMENTOS ============ -->
+    <section class="section testimonials" id="depoimentos" aria-labelledby="depoimentos-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Quem sentou, aprovou</p>
+          <h2 class="section__title" id="depoimentos-title">Depoimentos de clientes</h2>
+        </header>
+
+        <div class="grid grid--2" id="testimonialsGrid">
+          <!-- Renderizado via js/main.js a partir de data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="cta" id="cta">
+      <div class="container cta__inner reveal">
+        <h2 class="cta__title">Pronto para mudar o visual?</h2>
+        <p class="cta__text">Faça como quem já é cliente: chama no WhatsApp, escolhe o horário e aparece na cadeira.</p>
+        <a class="btn btn--gold btn--lg" target="_blank" rel="noopener" data-whatsapp href="#">
+          Agendar via WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ ORÇAMENTO ============ -->
+    <section class="section budget" id="orcamento" aria-labelledby="orcamento-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Agende seu horário</p>
+          <h2 class="section__title" id="orcamento-title">Marcar um corte</h2>
+          <p class="section__lead">Escolha o serviço e o melhor horário que a gente confirma rapidinho pelo WhatsApp.</p>
+        </header>
+
+        <form class="budget__form reveal" id="budgetForm" novalidate>
+          <div class="budget__grid">
+            <div class="budget__field">
+              <label class="budget__label" for="budgetName">Nome</label>
+              <input class="budget__input" type="text" id="budgetName" name="nome" autocomplete="name" required aria-required="true">
+              <p class="budget__error" id="budgetName-error" role="alert" hidden></p>
+            </div>
+
+            <div class="budget__field">
+              <label class="budget__label" for="budgetWhatsapp">WhatsApp</label>
+              <input class="budget__input" type="tel" id="budgetWhatsapp" name="whatsapp" inputmode="tel" autocomplete="tel" placeholder="(11) 99999-9999" required aria-required="true">
+              <p class="budget__error" id="budgetWhatsapp-error" role="alert" hidden></p>
+            </div>
+
+            <div class="budget__field">
+              <label class="budget__label" for="budgetCity">Cidade</label>
+              <input class="budget__input" type="text" id="budgetCity" name="cidade" autocomplete="address-level2" required aria-required="true">
+              <p class="budget__error" id="budgetCity-error" role="alert" hidden></p>
+            </div>
+
+            <div class="budget__field">
+              <label class="budget__label" for="budgetService">Serviço desejado</label>
+              <select class="budget__input" id="budgetService" name="servico" required aria-required="true">
+                <option value="" selected disabled>Selecione um serviço</option>
+                <option value="Corte Adulto">Corte Adulto</option>
+                <option value="Corte Infantil">Corte Infantil</option>
+                <option value="Barba">Barba</option>
+                <option value="Combo Completo">Combo Completo</option>
+                <option value="Outro">Outro</option>
+              </select>
+              <p class="budget__error" id="budgetService-error" role="alert" hidden></p>
+            </div>
+
+            <div class="budget__field budget__field--optional">
+              <label class="budget__label" for="budgetDate">Data do corte</label>
+              <input class="budget__input" type="date" id="budgetDate" name="data">
+              <p class="budget__error" id="budgetDate-error" role="alert" hidden></p>
+            </div>
+
+            <div class="budget__field budget__field--optional">
+              <label class="budget__label" for="budgetTime">Horário</label>
+              <input class="budget__input" type="time" id="budgetTime" name="hora">
+              <p class="budget__error" id="budgetTime-error" role="alert" hidden></p>
+            </div>
+
+            <div class="budget__field budget__field--full budget__field--optional">
+              <label class="budget__label" for="budgetMessage">Mensagem</label>
+              <textarea class="budget__input" id="budgetMessage" name="mensagem" rows="4" placeholder="Conte um pouco mais sobre o que você deseja (opcional)"></textarea>
+            </div>
+          </div>
+
+          <div class="budget__actions">
+            <button class="btn btn--gold btn--lg" type="submit" id="budgetSubmit">
+              <span class="budget__submit-label">Marcar corte pelo WhatsApp</span>
+              <svg class="budget__spinner" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" hidden>
+                <line x1="12" y1="2" x2="12" y2="6"></line>
+                <line x1="12" y1="18" x2="12" y2="22"></line>
+                <line x1="4.9" y1="4.9" x2="7.8" y2="7.8"></line>
+                <line x1="16.2" y1="16.2" x2="19.1" y2="19.1"></line>
+                <line x1="2" y1="12" x2="6" y2="12"></line>
+                <line x1="18" y1="12" x2="22" y2="12"></line>
+                <line x1="4.9" y1="19.1" x2="7.8" y2="16.2"></line>
+                <line x1="16.2" y1="7.8" x2="19.1" y2="4.9"></line>
+              </svg>
+            </button>
+          </div>
+
+          <p class="budget__status budget__status--success" id="budgetSuccess" role="status" hidden>
+            Tudo certo! Sua solicitação foi enviada pelo WhatsApp — aguarde a confirmação do horário.
+          </p>
+          <p class="budget__status budget__status--error" id="budgetError" role="alert" hidden>
+            Não foi possível enviar a solicitação agora. Tente novamente em instantes.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ LOCALIZAÇÃO ============ -->
+    <section class="section location" id="localizacao" aria-labelledby="localizacao-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__kicker">Onde estamos</p>
+          <h2 class="section__title" id="localizacao-title">Venha nos visitar</h2>
+          <p class="section__lead">Fácil de chegar para você dar aquele trato no visual.</p>
+        </header>
+
+        <div class="location__grid reveal">
+          <div class="location__map" id="map" role="application" aria-label="Mapa interativo da Barbearia Batista">
+            <div class="location__map-error" id="mapError" role="alert" hidden>
+              <p class="location__map-error-title">Não foi possível carregar o mapa.</p>
+              <p class="location__map-error-text">Tente novamente mais tarde ou abra a nossa localização direto no Google Maps.</p>
+              <a class="btn btn--gold" id="mapFallbackLink" href="#" target="_blank" rel="noopener">Abrir no Google Maps</a>
+            </div>
+          </div>
+
+          <div class="location__info">
+            <h3>Barbearia Batista</h3>
+            <p class="location__address" id="locationAddress"></p>
+            <div class="location__actions">
+              <a class="btn btn--gold" id="mapDirections" href="#" target="_blank" rel="noopener">Como chegar</a>
+              <a class="btn btn--ghost" id="mapOpen" href="#" target="_blank" rel="noopener">Abrir no Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contato">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#topo" class="brand">
+          <img class="brand__logo" src="assets/images/logoprincipal.png" alt="Barbearia Batista" width="38" height="38">
+        </a>
+        <p>Sofisticação, tradição e cuidado em cada detalhe — para você e para sua família.</p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Horário</h3>
+        <ul class="footer__hours" id="hoursList"></ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Atendimento</h3>
+        <a class="footer__line footer__maps" id="footerMaps" href="#"
+           target="_blank" rel="noopener">
+          <span>📍&nbsp;</span><span id="footerAddress"></span>
+        </a>
+        <p class="footer__line">📞 <a id="footerPhone" href="#">(11) 99999-9999</a></p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Siga a gente</h3>
+        <div class="footer__social">
+          <a id="footerInstagram" href="#" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+              <path d="M16 11.37a4 4 0 1 1-7.9 1.26 4 4 0 0 1 7.9-1.26z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span id="footerInstagramName"></span>
+          </a>
+          <a data-whatsapp href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9 8.5 8.5 0 0 1 8.5 8.5z"></path>
+            </svg>
+            <span>Chamar no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p class="footer__copy" id="footerCopy"></p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a class="whatsapp-float" data-whatsapp href="#" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9 8.5 8.5 0 0 1 8.5 8.5z"></path>
+    </svg>
+  </a>
+
+  <!-- Botão voltar ao topo -->
+  <button class="to-top" id="toTop" aria-label="Voltar ao topo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Lightbox da galeria -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Visualização da foto">
+    <button class="lightbox__btn lightbox__close" data-lb="close" aria-label="Fechar">✕</button>
+    <button class="lightbox__btn lightbox__nav lightbox__prev" data-lb="prev" aria-label="Foto anterior">‹</button>
+    <figure class="lightbox__stage">
+      <img class="lightbox__img" src="" alt="">
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+    <button class="lightbox__btn lightbox__nav lightbox__next" data-lb="next" aria-label="Próxima foto">›</button>
+  </div>
+
+  <!-- Scripts (em ordem: dados → whatsapp → interações; edite o conteúdo em js/data.js) -->
+  <script src="js/data.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/maps.js"></script>
+</body>
+</html>
