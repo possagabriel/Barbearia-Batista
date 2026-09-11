@@ -1,0 +1,209 @@
+:root {
+  --ink:#101311;
+  --black:#0d100e;
+  --forest:#19231e;
+  --surface:#161a17;
+  --gold:#c6ad80;
+  --champagne:#d7c5a3;
+  --ivory:#f0ece3;
+  --muted:#b5b6ac;
+  --line:rgba(198,173,128,.24);
+  --font-title:'Cormorant Garamond',Georgia,serif;
+  --font-body:'Inter',Arial,sans-serif;
+  --ease:cubic-bezier(.2,.65,.3,1);
+  color-scheme:dark}
+  * {
+    box-sizing:border-box}
+    html {
+      scroll-behavior:smooth;
+      scroll-padding-top:110px}
+      body {
+        margin:0;
+        background:var(--ink);
+        color:var(--ivory);
+        font:400 1rem/1.8 var(--font-body);
+        -webkit-font-smoothing:antialiased}
+        body:has(dialog[open]) {
+          overflow:hidden}
+          h1,h2,h3,p,figure {
+            margin:0}
+            h1,h2,h3 {
+              font-family:var(--font-title);
+              font-weight:400;
+              line-height:1.05}
+              h2 {
+                font-size:clamp(2.9rem,4.65vw,4.75rem);
+                letter-spacing:-.035em}
+                h2 em {
+                  color:var(--champagne);
+                  font-weight:400}
+                  a {
+                    color:inherit;
+                    text-decoration:none}
+                    button,input,select,textarea {
+                      font:inherit}
+                      button,a,input,select,textarea {
+                        -webkit-tap-highlight-color:transparent}
+                        button {
+                          cursor:pointer}
+                          img {
+                            display:block;
+                            max-width:100%}
+                            button {
+                              color:inherit}
+                              button:disabled {
+                                cursor:wait}
+                                a,button {
+                                  touch-action:manipulation}
+                                  a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible {
+                                    outline:2px solid var(--champagne);
+                                    outline-offset:6px}
+                                    ::selection {
+                                      background:var(--gold);
+                                      color:var(--black)}
+                                      [hidden] {
+                                        display:none!important}
+                                        .container {
+                                          width:min(1280px,calc(100% - 128px));
+                                          margin-inline:auto}
+                                          .section {
+                                            padding-block:132px}
+                                            .eyebrow {
+                                              font-size:.75rem;
+                                              font-weight:500;
+                                              letter-spacing:.21em;
+                                              color:var(--gold);
+                                              line-height:1.7}
+                                              .button {
+                                                display:inline-flex;
+                                                align-items:center;
+                                                justify-content:space-between;
+                                                gap:32px;
+                                                min-height:56px;
+                                                padding:15px 26px;
+                                                border:1px solid transparent;
+                                                font-size:.875rem;
+                                                font-weight:500;
+                                                line-height:1.6;
+                                                transition:background .45s,color .45s,border-color .45s}
+                                                .button span {
+                                                  font-size:1.25rem;
+                                                  font-weight:300}
+                                                  .button--champagne {
+                                                    background:var(--champagne);
+                                                    color:#182018}
+                                                    .button--champagne:hover {
+                                                      background:var(--ivory)}
+                                                      .button--outline {
+                                                        border-color:var(--line);
+                                                        color:var(--champagne);
+                                                        background:transparent}
+                                                        .button--outline:hover {
+                                                          border-color:var(--gold);
+                                                          background:rgba(198,173,128,.06)}
+                                                          .text-link {
+                                                            display:inline-flex;
+                                                            align-items:center;
+                                                            gap:20px;
+                                                            padding-block:9px;
+                                                            border-bottom:1px solid var(--line);
+                                                            color:var(--champagne);
+                                                            font-size:.875rem}
+                                                            .text-link:hover {
+                                                              border-color:var(--gold)}
+                                                              .brand {
+                                                                display:inline-flex;
+                                                                flex-direction:column;
+                                                                align-items:center;
+                                                                line-height:1;
+                                                                flex-shrink:0}
+                                                                .brand__eyebrow {
+                                                                  font-size:.75rem;
+                                                                  letter-spacing:.46em;
+                                                                  padding-left:.46em;
+                                                                  color:var(--champagne)}
+                                                                  .brand__name {
+                                                                    font-family:var(--font-title);
+                                                                    font-size:2.5rem;
+                                                                    letter-spacing:.09em;
+                                                                    font-weight:500;
+                                                                    margin-top:5px}
+                                                                    .brand__period {
+                                                                      color:var(--gold);
+                                                                      letter-spacing:0}
+                                                                      .header {
+                                                                        position:absolute;
+                                                                        top:0;
+                                                                        left:0;
+                                                                        width:100%;
+                                                                        z-index:20;
+                                                                        border-bottom:1px solid rgba(198,173,128,.2);
+                                                                        background:linear-gradient(rgba(13,16,14,.6),transparent)}
+                                                                        .header__inner {
+                                                                          min-height:112px;
+                                                                          display:flex;
+                                                                          align-items:center;
+                                                                          justify-content:space-between;
+                                                                          gap:32px}
+                                                                          .nav {
+                                                                            display:flex;
+                                                                            gap:32px;
+                                                                            align-items:center}
+                                                                            .nav__link {
+                                                                              font-size:.875rem;
+                                                                              color:#d4d4ca;
+                                                                              position:relative;
+                                                                              padding:10px 0;
+                                                                              transition:color .4s}
+                                                                              .nav__link:after {
+                                                                                content:'';
+                                                                                position:absolute;
+                                                                                bottom:3px;
+                                                                                left:0;
+                                                                                width:100%;
+                                                                                height:1px;
+                                                                                background:var(--gold);
+                                                                                transform:scaleX(0);
+                                                                                transform-origin:left;
+                                                                                transition:transform .45s}
+                                                                                .nav__link:hover,.nav__link[aria-current] {
+                                                                                  color:var(--champagne)}
+                                                                                  .nav__link:hover:after,.nav__link[aria-current]:after {
+                                                                                    transform:scaleX(1)}
+                                                                                    .header__cta {
+                                                                                      font-size:.8125rem;
+                                                                                      padding:11px 18px;
+                                                                                      min-height:48px;
+                                                                                      gap:28px}
+                                                                                      .nav-toggle {
+                                                                                        display:none;
+                                                                                        background:none;
+                                                                                        border:1px solid var(--line);
+                                                                                        padding:12px;
+                                                                                        width:46px;
+                                                                                        height:46px;
+                                                                                        align-items:center;
+                                                                                        justify-content:center;
+                                                                                        flex-direction:column;
+                                                                                        gap:6px}
+                                                                                        .nav-toggle span {
+                                                                                          display:block;
+                                                                                          width:18px;
+                                                                                          height:1px;
+                                                                                          background:var(--champagne);
+                                                                                          transition:transform .4s}
+                                                                                          .nav-toggle[aria-expanded=true] span:first-child {
+                                                                                            transform:translateY(3.5px) rotate(45deg)}
+                                                                                            .nav-toggle[aria-expanded=true] span:last-child {
+                                                                                              transform:translateY(-3.5px) rotate(-45deg)}
+                                                                                              .skip-link {
+                                                                                                position:fixed;
+                                                                                                top:12px;
+                                                                                                left:12px;
+                                                                                                background:var(--champagne);
+                                                                                                color:var(--ink);
+                                                                                                padding:10px 20px;
+                                                                                                z-index:100;
+                                                                                                transform:translateY(-160%)}
+                                                                                                .skip-link:focus {
+                                                                                                  transform:none}

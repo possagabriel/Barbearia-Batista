@@ -1,0 +1,29 @@
+{
+  "tool": "built-in image_gen",
+  "generation_count": 3,
+  "requests": "One request per asset, all three requests in a single parallel batch. No variants or retries.",
+  "conceptual_images": true,
+  "assets": [
+    {
+      "name": "hero",
+      "file": "/home/dp/Documents/Codex/2026-09-11/na-x20/work/imagery/barbershop-hero.png",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case: photorealistic-natural\nAsset type: luxury Brazilian barbershop homepage hero photograph\nPrimary request: Original cinematic photograph of an intimate private-club barbershop interior, with an authentic black leather classic barber chair placed center-right, dark walnut paneling, antique brass large mirrors and warm wall sconces, subtle daylight.\nStyle/medium: Photographic realism, luxury editorial interiors photography, original conceptual interior.\nComposition/framing: Landscape 3:2; generous darker left area as natural negative space for HTML text placed later, photograph contains no text. Camera at human eye height.\nLighting/mood: Restrained warm dramatic light, intimate, believable reflections.\nColor palette: Black, espresso, aged brass; cohesive warm muted color treatment.\nMaterials/textures: Tactile worn leather, real dark walnut grain, subtly aged metal.\nConstraints: No people, no text, no logos, no watermarks. This is an original conceptual interior, not documentation of any actual business. Create exactly one image."
+    },
+    {
+      "name": "ritual",
+      "file": "/home/dp/Documents/Codex/2026-09-11/na-x20/work/imagery/barbershop-ritual.png",
+      "width": 1024,
+      "height": 1536,
+      "prompt": "Use case: photorealistic-natural\nAsset type: portrait editorial photograph for a luxury Brazilian barbershop homepage\nPrimary request: Fine-art still life of an open straight razor with black handle, ivory natural-bristle shaving brush, dark shaving bowl, and neatly folded ivory towel on dark aged wood or espresso stone.\nScene/backdrop: Deep green-black backdrop.\nStyle/medium: Photographic realism, luxury magazine still life, original editorial concept.\nComposition/framing: Portrait 2:3, balanced deliberate arrangement, intimate close view with rich tactile textures.\nLighting/mood: Warm grazing light with deep restrained shadows, warm muted color treatment.\nMaterials/textures: Polished steel razor edge, black handle, natural bristles, matte dark bowl, finely textured ivory towel, dark aged wood or espresso stone.\nConstraints: No people, no text, no logos, no watermarks. Create exactly one image."
+    },
+    {
+      "name": "detail",
+      "file": "/home/dp/Documents/Codex/2026-09-11/na-x20/work/imagery/barbershop-detail.png",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Use case: photorealistic-natural\nAsset type: landscape editorial detail photograph for a luxury Brazilian barbershop homepage\nPrimary request: Macro editorial crop of a worn-in cognac and black leather barber chair armrest and antique brass/chrome hardware, with softly blurred walnut paneling in the background.\nStyle/medium: Understated luxury photographic realism, original conceptual interior detail, rich physical texture.\nComposition/framing: Landscape 3:2, intimate macro crop, armrest and aged hardware are the main subject, shallow depth of field.\nLighting/mood: Atmospheric warm directional light, restrained dramatic shadows, cohesive warm muted color treatment.\nMaterials/textures: Supple leather grain and subtle natural wear, aged brass, real reflective chrome, dark walnut.\nConstraints: No people, no text, no logos, no watermarks. This is an original conceptual image, not documentation of an actual business. Create exactly one image."
+    }
+  ]
+}

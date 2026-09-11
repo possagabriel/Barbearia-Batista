@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="600" viewBox="0 0 480 600">
+  <rect width="480" height="600" fill="#2d2d2d"/>
+  <circle cx="240" cy="205" r="95" fill="#1a1a1a"/>
+  <path d="M145 480 Q240 380 335 480 L335 600 L145 600 Z" fill="#1a1a1a"/>
+  <path d="M150 155 h55" stroke="#c9a84c" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M150 185 h42" stroke="#c9a84c" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M150 215 h50" stroke="#c9a84c" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M330 155 h-55" stroke="#c9a84c" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M330 185 h-42" stroke="#c9a84c" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M330 215 h-50" stroke="#c9a84c" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M185 260 q55 45 110 0" stroke="#c9a84c" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <text x="240" y="562" font-family="Georgia,serif" font-size="22" fill="#c9a84c" text-anchor="middle" letter-spacing="5">SOCIAL</text>
+</svg>
